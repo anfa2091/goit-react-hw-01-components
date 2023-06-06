@@ -1,0 +1,19 @@
+.status {
+    display: block;
+
+    width: 15px;
+    height: 15px;
+    margin-right: 20px;
+
+    border-radius: 50%;
+}
+
+.available {
+    composes: status;
+    background-color: #1b9c26;
+}
+
+.not-available {
+    composes: status;
+    background-color: #a82929;
+}

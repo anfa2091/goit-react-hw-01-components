@@ -1,4 +1,10 @@
-<table class="transaction-history">
+import './TransactionHistory.css';
+import PropTypes from "prop-types";
+import Transaction from './Transaction.jsx';
+
+export const TransactionHistory = ({ items }) => {
+  return (<section className="">
+    <table className="transaction-history">
   <thead>
     <tr>
       <th>Type</th>
@@ -7,16 +13,25 @@
     </tr>
   </thead>
 
-  <tbody>
-    <tr>
-      <td>Invoice</td>
-      <td>125</td>
-      <td>USD</td>
-    </tr>
-    <tr>
-      <td>Withdrawal</td>
-      <td>85</td>
-      <td>USD</td>
-    </tr>
-  </tbody>
+      <tbody>
+        {items.map(Transaction)}        
+      </tbody>
 </table>
+     
+    </section>
+    );
+};
+
+TransactionHistory.propTypes = {
+  id: PropTypes.string,
+  type: PropTypes.string,
+  amount: PropTypes.string,
+  currency: PropTypes.string,
+};
+
+export default TransactionHistory;
+
+
+
+
+
