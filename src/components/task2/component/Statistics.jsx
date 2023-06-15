@@ -5,10 +5,11 @@ import Stats from './Stats.jsx';
 
 export const Statistics = ({ title, stats }) => {
 
-    return (<section className="statistics">
-        <h2 className="title">{title}</h2>
-
-        <ul className="stat-list"> {stats.map(Stats)}</ul>
+  return (<section className="statistics-container">
+    <div className="statistics">
+      <h2 className="title">{title}</h2>
+      <ul className="stat-list"> {stats.map(Stats)}</ul>
+    </div>
     </section>
     );
 };
