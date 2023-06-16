@@ -3,10 +3,10 @@ import PropTypes from "prop-types";
 import Transaction from './Transaction.jsx';
 
 export const TransactionHistory = ({ items }) => {
-  return (<section className="">
+  return (<section className="transaction-container">
     <table className="transaction-history">
   <thead>
-    <tr>
+    <tr className='transaction-title'>
       <th>Type</th>
       <th>Amount</th>
       <th>Currency</th>

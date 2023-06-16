@@ -1,0 +1,26 @@
+.transaction-container{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.transaction-history{
+    text-align: center;
+    width: 480px;
+}
+
+.transaction-title{
+    background-color: #54c7ec;
+    color: #e6f6e6;
+}
+
+th{
+    border-radius: 10px;
+    height: 30px;
+}
+
+tbody{
+    background-color: #ebf2fc;
+    color: #3b8ba5;
+    border-radius: 5px;
+}
